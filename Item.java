@@ -4,7 +4,7 @@
 public class Item {
     private String name;
     private double price;
-}
+
 
     public Item(String name, double price){
         this.name = name;
@@ -27,3 +27,6 @@ public class Item {
     public void setItemPrice(double price){
         this.price = price;
     }
+
+
+}

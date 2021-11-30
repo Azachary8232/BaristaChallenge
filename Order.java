@@ -7,7 +7,7 @@ public class Order{
     private boolean ready;
     private ArrayList<Item> items = new ArrayList<Item>();
 
-}
+
 
     public Order(){
         this.name = "Guest";
@@ -38,6 +38,10 @@ public class Order{
         this.ready = ready;
     }
     public void setOrderItems(ArrayList<Item> items){
-        this.item = items;
+        this.items = items;
     }
 
+
+
+
+}
