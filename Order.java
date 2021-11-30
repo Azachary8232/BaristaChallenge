@@ -18,6 +18,11 @@ public class Order{
         this.name = name;
     }
 
+    // methods
+    public void addItem(Item item){
+        this.items.add(item);
+    }
+
 
     //  getters
     public String getOrderName(){
