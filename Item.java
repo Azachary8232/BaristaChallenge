@@ -14,10 +14,10 @@ public class Item {
 
     //  getters
     public String getItemName(){
-        return name;
+        return this.name;
     }
     public double getItemPrice(){
-        return price;
+        return this.price;
     }
 
     // setters
