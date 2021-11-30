@@ -32,6 +32,7 @@ public class TestOrder{
         order5.addItem(item2);
 
         System.out.printf("%s", order4.getOrderName());
-        System.out.printf("%s", order5.getOrderItems());
+        System.out.printf("%s", order5.getOrderItems().get(0));
+        System.out.printf("%s", order4.getOrderItems().get(1));
     }
 }

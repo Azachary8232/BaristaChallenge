@@ -22,6 +22,14 @@ public class Order{
     public void addItem(Item item){
         this.items.add(item);
     }
+    public String getStatusMessage(){
+        if(ready){
+            return "Your order is ready.";
+        }
+        else{
+            return "Thank you for waiting. Your order will be ready soon.";
+        }
+    }
 
 
     //  getters
