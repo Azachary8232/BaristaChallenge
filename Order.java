@@ -40,6 +40,15 @@ public class Order{
         return total;
     }
 
+    public void displayMenu(){
+        System.out.println(this.name);
+        for (Item i : items ){
+            System.out.println(i.getItemName());
+            System.out.println(i.getItemPrice());
+        }
+        System.out.println(getOrderTotal());
+    }
+
     //  getters
     public String getOrderName(){
         return this.name;
