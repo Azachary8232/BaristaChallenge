@@ -16,18 +16,21 @@ public class TestOrder{
         order1.addItem(item2);
         order1.setOrderReady(true);
         System.out.println(order1.getStatusMessage());
+        order1.displayMenu();
 
         Order order2 = new Order();
         order2.addItem(item2);
         order2.addItem(item3);
         order2.setOrderReady(false);
         System.out.println(order2.getStatusMessage());
+        order2.displayMenu();
 
         Order order3 = new Order("Brian");
         order3.addItem(item3);
         order3.addItem(item4);
         order3.setOrderReady(true);
         System.out.println(order3.getStatusMessage());
+        order3.displayMenu();
 
         Order order4 = new Order("Marsha");
         order4.addItem(item4);
@@ -35,12 +38,14 @@ public class TestOrder{
         order4.setOrderReady(false);
         System.out.println(order4.getStatusMessage());
         System.out.println(order4.getOrderTotal());
+        order4.displayMenu();
 
         Order order5 = new Order("Paul");
         order5.addItem(item1);
         order5.addItem(item2);
         order5.setOrderReady(true);
         System.out.println(order5.getStatusMessage());
+        order5.displayMenu();
 
 
         System.out.printf("%s", order4.getOrderName());

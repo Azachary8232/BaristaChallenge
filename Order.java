@@ -41,12 +41,11 @@ public class Order{
     }
 
     public void displayMenu(){
-        System.out.println(this.name);
+        System.out.println("Customer Name:" + this.name);
         for (Item i : items ){
-            System.out.println(i.getItemName());
-            System.out.println(i.getItemPrice());
+            System.out.println(i.getItemName() + " - " + i.getItemPrice());
         }
-        System.out.println(getOrderTotal());
+        System.out.println("Total: " + getOrderTotal());
     }
 
     //  getters
