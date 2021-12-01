@@ -31,6 +31,14 @@ public class Order{
         }
     }
 
+    public double getOrderTotal(){
+        double total = 0;
+        ArrayList<Item> prices = getOrderItems();
+        for( int i = 0; i < prices.size(); i++){
+            total += prices.get(i).getItemPrice();
+        }
+        return total;
+    }
 
     //  getters
     public String getOrderName(){

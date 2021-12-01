@@ -34,6 +34,7 @@ public class TestOrder{
         order4.addItem(item1);
         order4.setOrderReady(false);
         System.out.println(order4.getStatusMessage());
+        System.out.println(order4.getOrderTotal());
 
         Order order5 = new Order("Paul");
         order5.addItem(item1);
